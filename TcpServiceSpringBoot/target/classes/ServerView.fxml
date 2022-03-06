@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="764.0" prefWidth="968.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xu.javaFx.controller.ServerController">
+   <children>
+      <TextArea fx:id="rece_area" layoutX="26.0" layoutY="212.0" prefHeight="500.0" prefWidth="460.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+      <TextArea fx:id="send_area" layoutX="493.0" layoutY="212.0" prefHeight="500.0" prefWidth="450.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+      <Button fx:id="clear_rece" layoutX="213.0" layoutY="719.0" mnemonicParsing="false" onAction="#ClearReceClick" text="清空接收区" />
+      <Button fx:id="clear_send" layoutX="680.0" layoutY="719.0" mnemonicParsing="false" onAction="#ClearSendClick" text="清空发送区" />
+      <Label layoutX="32.0" layoutY="171.0" prefHeight="37.0" prefWidth="76.0" text="接收区">
+         <font>
+            <Font name="KaiTi" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="860.0" layoutY="171.0" prefHeight="37.0" prefWidth="76.0" text="发送区">
+         <font>
+            <Font name="KaiTi" size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="client_list" layoutX="228.0" layoutY="42.0" prefHeight="148.0" prefWidth="247.0" />
+      <Label layoutX="379.0" prefHeight="37.0" prefWidth="134.0" text="在线客户端">
+         <font>
+            <Font name="KaiTi" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="client_num" layoutX="531.0" prefHeight="37.0" prefWidth="57.0" text="0">
+         <font>
+            <Font name="KaiTi" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="server_mess" layoutX="493.0" layoutY="42.0" prefHeight="148.0" prefWidth="303.0" />
+   </children>
+</AnchorPane>
